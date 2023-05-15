@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="display"><span id = "display"></span></div>
+        <div class="keypad">
+            <div class="first-row">
+                <button onclick="clearAll()" class="key acKey">AC</button>
+                <button onclick="removeLastFromStr()" class="key deleteKey">&larr;</button>            
+                <button onclick="addToDisplay('/')" class="key operations">&divide;</button>
+            </div>
+            <div class="sec-row">
+                <button onclick="addToDisplay('1')" class="key numbers">1</button>
+                <button onclick="addToDisplay('2')" class="key numbers">2</button>
+                <button onclick="addToDisplay('3')" class="key numbers">3</button>
+                <button onclick="addToDisplay('*')" class="key operations">&times;</button>
+            </div>
+            <div class="third-row">
+                <button onclick="addToDisplay('4')" class="key numbers">4</button>
+                <button onclick="addToDisplay('5')" class="key numbers">5</button>
+                <button onclick="addToDisplay('6')" class="key numbers">6</button>
+                <button onclick="addToDisplay('+')" class="key operations">&plus;</button>
+            </div>
+            <div class="fourth-row">
+                <button onclick="addToDisplay('7')" class="key numbers">7</button>
+                <button onclick="addToDisplay('8')" class="key numbers">8</button>
+                <button onclick="addToDisplay('9')" class="key numbers">9</button>
+                <button onclick="addToDisplay('-')" class="key operations">&minus;</button>
+            </div>
+            <div class="last-row">
+                <button onclick="addToDisplay('.')" class="key numbers">&dot;</button>
+                <button onclick="addToDisplay('0')" class="key numbers">0</button>
+                <button class="key equals" onclick="printResult()">&equals;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
