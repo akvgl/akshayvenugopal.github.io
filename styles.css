@@ -410,7 +410,7 @@ animation: typingAnimation 3.5s steps(6) 800ms forwards,
   .content
   {
     line-height: 1.3em;
-    font-size: calc(var(---content-font-size) - 4px);
+    font-size: calc(var(---content-font-size) - 5px);
   }
 }
 /* For small screen */
